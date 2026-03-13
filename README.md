@@ -1,7 +1,7 @@
 # frontend-development-practice
-Practice projects and exercises using HTML, CSS and JavaScript while learning frontend web development
+- Practice projects and exercises using HTML, CSS and JavaScript while learning frontend web development
 this repository contains my practice projects while learning **HTML, CSS and JavaScript**.
-I created this repository to improv e my frontend development skills by building small projects experimenting with different web development concepts. 
+- I created this repository to improve my frontend development skills by building small projects experimenting with different web development concepts. 
 ## Technologies Used
 - HTML
 - CSS
@@ -14,6 +14,6 @@ I created this repository to improv e my frontend development skills by building
 ## Projects
 project will be added here as I continue learning and building.
 ## Author
-Khalid Danish
-CS students
+Khalid Danish |
+CS students |
 frontend developer
