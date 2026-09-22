@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .image{
+            height: 400px;
+            box-shadow: 1px 1px 3px 4px rgba(0,0,0,0.2);
+            border-radius:10px ;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            margin:5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            background-color: green;
+            color: white;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .image {
+                margin: 5px 10px;
+            }
+            button{
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="bulb-off.jpg" class="img">
+    </div>
+    <button class="btn">turn on</button>
+    <script>
+        // select the img and btn element 
+        let image = document.querySelector(".img")
+        let btn  = document.querySelector(".btn")
+    // bulb is off by default 
+        let bulb = false
+        btn.addEventListener("click", ()=>{
+            if(!bulb){
+            btn.textContent = "turn off"
+            image.setAttribute("src", "bulb-on.jpg")
+            bulb = true
+            } else{
+                btn.textContent = "turn on"
+                image.setAttribute("src", "bulb-off.jpg")
+                bulb = false
+            }
+        })
+    </script>
+</body>
+</html>
