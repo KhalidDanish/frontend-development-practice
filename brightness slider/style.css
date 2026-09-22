@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: url(./pexels-minan1398-911807.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(100%);
+}
+
+#range{
+    width: 100%;
+    cursor:grab;
+}
+.brightness-range{
+    width: 160px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 6px;
+    padding: 10px;
+
+}
+@media (max-width: 768px){
+    .brightness-range{
+        height: 50px;
+        width: 60%;
+    }
+}
