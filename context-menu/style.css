@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
+    font-family: sans-serif;
+}
+.context-menu{
+    position: absolute;
+    height: auto;
+    width: 180px;
+    background-color: white;
+    border-radius:10px ;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+    display: none;
+}
+.menu{
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+}
+
+.menu li:hover{
+    background-color: rgba(150, 143, 182, 0.815);
+    border-radius: 5px;
+}
+.menu li:hover a{
+     color: rgb(73, 73, 197);
+}
+ul li:last-child:hover{
+    background-color: red;
+}
+.menu li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(0,0,0,0.8);
+}
+.menu li a i{
+    margin: 5px;
+}
